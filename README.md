@@ -23,7 +23,7 @@
 <p align="center">
   <a href="#about">About</a> • 
   <a href="#installation">Installation</a> • 
-  <a href="#updating">Usage</a> • 
+  <a href="#usage">Usage</a> • 
   <a href="#features">Features</a> • 
   <a href="#author">Author</a> • 
   <a href="#support">Support</a> • 
