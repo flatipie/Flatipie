@@ -143,10 +143,6 @@ For more<u> information</u> about custom **widgets** and samples, kindly proceed
 | [Learn More](https://) |
 | ---------------------- |
 
-## Author
-
----
-
 ## Help
 
 ---
@@ -164,7 +160,7 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 
 ---
 
-****Flatipie**** was *created* and *maintained* by [**Zenqi**](https://github.com/zenqiwp) in **9th day of November, 2020**.
+**Flatipie** was *created* and *maintained* by [Zenqi](https://github.com/zenqiwp) in **9th day of November, 2020**.
 
 | <img title="" src="https://www.github.com/flatipie/Flatipie/author/zenqi.png" alt="" width="123"> |
 |:-------------------------------------------------------------------------------------------------:|
