@@ -12,8 +12,8 @@
      <a href="https://discord.gg/QDTj5sz">
     <img src="https://img.shields.io/discord/749990569266380821?color=5087F4&label=Discord&logo=discord&style=flat-square"
          alt="Discord">
-    <a href="https://twitter.com/zengameofficial">
-    <img src=https://img.shields.io/twitter/follow/zengameofficial?color=%235087F4&label=Twitter&logo=twitter&style=flat-square
+    <a href="https://twitter.com/flatipieqt">
+    <img src=https://img.shields.io/twitter/follow/flatipieqt?color=%235087F4&label=Twitter&logo=twitter&style=flat-square
          alt="Twitter">
      <a href="#License">
      <img src=https://img.shields.io/github/license/flatipie/Flatipie?color=5087F4&label=License&style=flat-square
@@ -21,12 +21,12 @@
 </p>
 
 <p align="center">
-  <a href="#about">About</a> • 
-  <a href="#installation">Installation</a> • 
-  <a href="#usage">Usage</a> • 
-  <a href="#features">Features</a> • 
-  <a href="#author">Author</a> • 
-  <a href="#support">Support</a> • 
+  <a href="#about">About</a> | 
+  <a href="#installation">Installation</a> | 
+  <a href="#updating">Usage</a> | 
+  <a href="#features">Features</a> | 
+  <a href="#author">Author</a> | 
+  <a href="#help">Help</a> | 
   <a href="#license">License</a>
 </p>
 
@@ -34,7 +34,7 @@
 
 **Flatipie** *is an **open source framework use for deploying**, **building** and **creating desktop applications**. It was created to build modern qt project easily and reliable.*
 
-It was originally **developed** to build <u>desktop application </u>easily using [PyQt5](https://pypi.org/project/pyqt5) that also uses it's original stylesheet for creating *modern application*.
+**Flatipie** was originally **developed** to build <u>desktop application </u>easily using [PyQt5](https://pypi.org/project/pyqt5) that also uses it's original stylesheet for creating *modern application*.
 
 <img src="https://arminc.ga/resources/autoexec/arminc_autoexec_code.png" title="" alt="ArminC AutoExec Code" width="703">
 
@@ -64,23 +64,17 @@ $ pip install flatipie --update
 
 > You can check out the main [documentation](https://www.flatipie.tk)
 
-
-
 To create your first project, just kindly execute **create** command after you installed Flatipie and fill out any requirements used for packaging the project
 
 ```
 $ flatipie create
 ```
 
-
-
 You can **run** file that contains *package.json* just execute this following **command**
 
 ```
 $ flatipie run
 ```
-
-
 
 After you finish creating your app, you can easily build **executable** file for it with the following **command**. Make sure it contains package.json
 
@@ -91,19 +85,90 @@ $ flatipie build
 | [Learn More](https://www.flatipie.tk) |
 | ------------------------------------- |
 
-
-
 ## Features
 
 ---
 
+We also added alot of **widgets**/**features** for creating modern applications. Here are the list of widgets we customize
+
+**Button**
+
+```py
+"""
+Following args for the button:
+
+    Button(parent, string, font, color, hover)
+
+You don't need to provide stylesheet for it, just past in the arguments
+in order to achieve your style.
+
+"""
+button = Button(self, "Get Started")
+button.clicked.connect(lambda: print("Navigation"))
+```
+
+**Clickable cards**
+
+```python
+"""
+Clickable cards are similar to groupbox with clicking signals
+and more effect. 
+
+To connect clicked signals you may use this
+"""
+
+cards.clicked.connect(lambda: print("Navigation"))
+```
+
+**Sidebar**
+
+```python
+"""
+The following arguments/functions are:
+
+    Sidebar(parent)
+    Sidebar.addPage(QWidget)
+"""
 
 
+sidebar = Sidebar(self)
+sidebar.addPage(QWidget())
+sidebar.setIcon(QIcon("icon.png"))
+```
 
+---
 
+For more<u> information</u> about custom **widgets** and samples, kindly proceed in this *link*
 
+| [Learn More](https://) |
+| ---------------------- |
 
+## Author
 
+---
+
+## Help
+
+---
+
+Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **discord server** and chat with others! You can also follow me on **twitter**
+
+<a href="https://discord.gg/QDTj5sz">
+<img src="https://img.shields.io/discord/749990569266380821?color=5087F4&label=Discord&logo=discord&style=flat-square"
+    alt="Discord">
+<a href="https://twitter.com/flatipieqt">
+<img src=https://img.shields.io/twitter/follow/flatipieqt?color=%235087F4&label=Twitter&logo=twitter&style=flat-square
+    alt="Twitter">
+
+## Author
+
+---
+
+****Flatipie**** was *created* and *maintained* by [**Zenqi**](https://github.com/zenqiwp) in **9th day of November, 2020**.
+
+| <img title="" src="https://www.github.com/flatipie/Flatipie/author/zenqi.png" alt="" width="123"> |
+|:-------------------------------------------------------------------------------------------------:|
+| [Zenqi](https://www.github.com/zenqiwp)                                                           |
 
 ## License
 
@@ -111,7 +176,6 @@ $ flatipie build
 
 <details>
 <summary>MIT</summary>
-
 Copyright (c) 2020 Flatipie
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -134,10 +198,4 @@ SOFTWARE.
 
 </details>
 
-
-
-
-
-
-
-
+</details>
