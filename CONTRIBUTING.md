@@ -2,6 +2,7 @@
 
 > You can also put your profile in **Contributors** section
 
+
 Feel free to create a pull requests for the project. Here are some rules in contributing
 
 - Use <a href="#emojis">emoji</a> for any changes you have done.
@@ -20,4 +21,7 @@ Feel free to create a pull requests for the project. Here are some rules in cont
 | :book: | Use this emoji if you update either readme or any docs related |
 | --- | --- |
 | :label: | **Use this emoji if you update any code.** |
+| --- | --- |
+| ::green_book: | **Use this emoji if you add something** |
+| --- | --- |
 | :x: | **Use this emoji if you update or fix any bugs** |
