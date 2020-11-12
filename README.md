@@ -70,7 +70,8 @@ After you finish creating your app, you can easily build **executable** file for
 $ flatipie build
 ```
 
-[Learn More](https://www.github.com/flatipie/flatipie)
+| [Learn More](https://www.github.com/flatipie/flatipie) |
+|:------------------------------------------------------:|
 
 ## Features
 
@@ -127,7 +128,8 @@ sidebar.setIcon(QIcon("icon.png"))
 
 For more<u> information</u> about custom **widgets** and samples, kindly proceed in this *link*
 
-[Learn More](https://www.github.com/flatipie/flatipie)
+| [Learn More](https://www.github.com/flatipie/flatipie) |
+|:------------------------------------------------------:|
 
 ## Help
 
