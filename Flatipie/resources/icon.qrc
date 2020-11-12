@@ -1,0 +1,14 @@
+<RCC>
+	<qresource prefix="icon">
+		<file>rc/close.png</file>
+		<file>rc/minimize.png</file>
+		<file>rc/maximize.png</file>
+		<file>rc/restore.png</file>
+	</qresource>
+
+	<qresource prefix="flatipiestyle">
+		<file>frameless.qss</file>
+		<file>style.qss</file>
+	</qresource>
+
+</RCC>

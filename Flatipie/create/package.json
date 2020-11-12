@@ -1,0 +1,18 @@
+{
+	"name": "Demo",
+	"version": "1.0",
+	"author": "Zenqi",
+	"description": "a demo app",
+	"copyright": "Copyright (c) Zenqi, 2020. All rights reserved",
+	"main": "Demo/main.py",
+	"build": {
+	"exe_path": "Demo/bin",
+		"icon": "Demo/src/resources/icons/icon.ico",
+		"add_data": "Demo/src;.",
+		"onedir": true
+	},
+	"resources": {
+		"resource_file": "resources/rc.qrc",
+		"compiled_path": "resources/rc.py"
+	} 
+}
