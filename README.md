@@ -148,9 +148,9 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 
 **Flatipie** was *created* and *maintained* in **9th day of November, 2020**.
 
-| ![](https://www.github.com/zenqiwp.png?size=50) | ![](https://github.com/zenqiwp.png?size=50 |
-|:-----------------------------------------------:| ------------------------------------------ |
-| [flatipie](https://www.github.com/flatipie)     | [Zenqi](https://www.github.com/zenqiwp)    |
+| ![](https://www.github.com/flatipie.png?size=50) | ![](https://github.com/zenqiwp.png?size=50) |
+|:------------------------------------------------:| ------------------------------------------- |
+| [flatipie](https://www.github.com/flatipie)      | [Zenqi](https://www.github.com/zenqiwp)     |
 
 ## Contributors
 
