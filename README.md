@@ -7,7 +7,7 @@
 
 <p align="center">
     <a href="https://github.com/flatipie/flatipie/commits/master">
-    <img src="https://img.shields.io/github/followers/zenqiwp?label=Follow&logo=github&style=flat-square"
+    <img src="https://img.shields.io/github/followers/zenqii?label=Follow&logo=github&style=flat-square"
          alt="GitHub">
      <a href="https://discord.gg/QDTj5sz">
     <img src="https://img.shields.io/discord/749990569266380821?color=5087F4&label=Discord&logo=discord&style=flat-square"
@@ -150,14 +150,14 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 
 **Flatipie** was *created* and *maintained* in **9th day of November, 2020**.
 
-| ![](https://www.github.com/flatipie.png?size=50) | ![](https://github.com/zenqiwp.png?size=50) |
+| ![](https://www.github.com/flatipie.png?size=50) | ![](https://github.com/zenqii.png?size=50) |
 |:------------------------------------------------:| ------------------------------------------- |
-| [flatipie](https://www.github.com/flatipie)      | [Zenqi](https://www.github.com/zenqiwp)     |
+| [flatipie](https://www.github.com/flatipie)      | [Zenqi](https://www.github.com/zenqii)     |
 
 ## Contributors
 
 ---
-![](https://www.github.com/zenqiwp.png?size=50)
+![](https://www.github.com/zenqii.png?size=50)
 
 
 ## License
