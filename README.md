@@ -36,10 +36,6 @@
 
 **Flatipie** was originally **developed** to build <u>desktop application </u>easily using [PyQt5](https://pypi.org/project/pyqt5) that also uses it's original stylesheet for creating *modern application*.
 
-| <img src="https://github.com/flatipie/Flatipie/blob/main/.resources/vector.jpg" title="" alt="Art" width="703"> |
-| ----------------------------------------------------------------------------------------------------------------|
-
-
 ## Installation
 
 ---
@@ -74,8 +70,7 @@ After you finish creating your app, you can easily build **executable** file for
 $ flatipie build
 ```
 
-| [Learn More](https://www.github.com/flatipie/flatipie) |
-| ------------------------------------- |
+[Learn More](https://www.github.com/flatipie/flatipie)
 
 ## Features
 
@@ -132,8 +127,7 @@ sidebar.setIcon(QIcon("icon.png"))
 
 For more<u> information</u> about custom **widgets** and samples, kindly proceed in this *link*
 
-| [Learn More](https://www.github.com/flatipie/flatipie) |
-| ---------------------- |
+[Learn More](https://www.github.com/flatipie/flatipie)
 
 ## Help
 
@@ -152,11 +146,15 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 
 ---
 
-**Flatipie** was *created* and *maintained* by Zenqi in **9th day of November, 2020**.
+**Flatipie** was *created* and *maintained* in **9th day of November, 2020**.
 
-| <img title="" src="https://avatars0.githubusercontent.com/u/66673988?s=460&u=08dc48dcd9372f527b03ebbfcc86c246a4a01e82&v=4" alt="" width="50"> |
-|:-------------------------------------------------------------------------------------------------:|
-| [Zenqi](https://www.github.com/zenqiwp)                                                           |
+| ![](https://avatars3.githubusercontent.com/u/74166653?s=400&u=d11dc10096cd3a3d43b9de99f14dc54d7f838cc9&v=4) | ![](https://avatars0.githubusercontent.com/u/66673988?s=460&u=08dc48dcd9372f527b03ebbfcc86c246a4a01e82&v=4) |
+| --- | --- |
+| [flatipie](https://www.github.com/flatipie) | [Zenqi](https://www.github.com/zenqiwp) |
+
+## Contributors
+
+---
 
 ## License
 
@@ -181,4 +179,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
