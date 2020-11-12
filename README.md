@@ -148,7 +148,7 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 
 **Flatipie** was *created* and *maintained* in **9th day of November, 2020**.
 
-| ![](https://avatars3.githubusercontent.com/u/74166653?s=400&u=d11dc10096cd3a3d43b9de99f14dc54d7f838cc9&v=4) | ![](https://avatars0.githubusercontent.com/u/66673988?s=460&u=08dc48dcd9372f527b03ebbfcc86c246a4a01e82&v=4) |
+| ![](https://github.com/flatipie.png?size=50) | ![](https://github.com/zenqiwp.png?size=50) |
 | --- | --- |
 | [flatipie](https://www.github.com/flatipie) | [Zenqi](https://www.github.com/zenqiwp) |
 
