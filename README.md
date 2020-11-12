@@ -162,7 +162,7 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 
 **Flatipie** was *created* and *maintained* by Zenqi in **9th day of November, 2020**.
 
-| <img title="" src="https://github.com/flatipie/Flatipie/blob/main/author/zenqi.jpg" alt="" width="100"> |
+| <img title="" src="https://github.com/flatipie/Flatipie/blob/main/author/zenqi.jpg" alt="" width="50"> |
 |:-------------------------------------------------------------------------------------------------:|
 | [Zenqi](https://www.github.com/zenqiwp)                                                           |
 
