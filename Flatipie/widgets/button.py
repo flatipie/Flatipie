@@ -21,85 +21,86 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+
 from PyQt5.QtWidgets import QPushButton
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon, QColor
 
 class Button(QPushButton):
     def __init__(self, parent, string, font_color="#fff", 
-        color="rgb(52, 152, 219)", hover_color="rgb(54, 145, 206)", outline=False, shadow=""):
+        color="rgb(52, 152, 219)", outline=False, shadow=True):
         super(Button, self).__init__(parent)
-
+        
+        self.color = QColor(color)
         self.outline = outline
-        self.hover = hover_color
+        self.hover = self.color.darker(50).name()
         self.shadow = shadow
-        self.color = color
+        self.shadow_color = self.color.darker(115).name()
         self.font_color = font_color
         self.create_style()
         
         self.setText(string)
         
     def create_style(self):
+      
         if self.outline == True:
-            style = """
-            QPushButton{
-                color: %s;
+            style = f"""
+            QPushButton {{
+                color: self.font_color;
                 font: Arial;
                 font-size: 8;
                 font-weight: bold;
                 background-color: transparent;
-                border: 2px solid %s;
+                border: 2px solid {self.color.name()};
              
-            }
-            QPushButton:hover{
-                color: %s;
+            }}
+            QPushButton:hover{{
+                color: {self.font_color};
                 font: Arial;
                 font-weight: bold;
                 font-size: 8;
-                background-color: %s;
+                background-color: {self.color.name()};
                 
-            }
-            """ % (self.color, self.color, self.font_color, self.color)
+            }}
+            """ 
             
         
-        elif self.outline == False and self.shadow  != "":
-            style = """
-            QPushButton{
-                color: %s;
+        elif self.outline == False and self.shadow  == False:
+            style = f"""
+            QPushButton {{
+                color: {self.font_color};
                 font: Arial;
                 font-weight: bold;
-                background-color: %s;
-                border: 2px solid %s;
-                border-bottom: 2px solid %s;
-            }
-            QPushButton:hover{
-                color: %s;
-                font: Arial;
-                font-size: 8;
-                font-weight: bold;
-                background-color: %s;
-                border-bottom: 2px solid %s;
-                
-            }
-
-            """ % (self.font_color, self.color, self.color, self.shadow, self.font_color, self.hover, self.shadow)
-
-        elif self.outline == False and self.shadow == "":
-                        style = """
-            QPushButton{
-                color: %s;
-                font: Arial;
-                font-weight: bold;
-                background-color: %s;
-                border: 2px solid %s;
-            }
-            QPushButton:hover{
-                color: %s;
+                background-color: {self.color.name()};
+                border: 2px solid {self.color.name()};
+            }}
+            QPushButton:hover {{
+                color: {self.font_color};
                 font: Arial;
                 font-size: 8;
                 font-weight: bold;
-                background-color: %s;                
-            }
+                background-color: {self.color.name()};    
+            }}
 
-            """ % (self.font_color, self.color, self.color, self.font_color, self.hover)
+            """
+        elif self.outline == False and self.shadow == True:
+                        style = f"""
+            QPushButton {{
+                color: {self.font_color};
+                font: Arial;
+                font-weight: bold;
+                background-color: {self.color.name()};
+                padding: 12px;
+                border-radius: 4px;
+                border: 4px solid {self.shadow_color};
+            }}
+            QPushButton:hover {{
+                color: {self.font_color};
+                font: Arial;
+                font-size: 8;
+                font-weight: bold;
+                background-color: {self.hover};                
+            }}
+
+            """
 
         self.setStyleSheet(style) 
