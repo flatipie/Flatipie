@@ -54,7 +54,7 @@ soon
 
 ---
 
-> You can check out the main [documentation](https://www.flatipie.tk)
+> You can check out the main [documentation](https://www.github.com/flatipie/Flatipie)
 
 To create your first project, just kindly execute **create** command after you installed Flatipie and fill out any requirements used for packaging the project
 
@@ -74,7 +74,7 @@ After you finish creating your app, you can easily build **executable** file for
 $ flatipie build
 ```
 
-| [Learn More](https://www.flatipie.tk) |
+| [Learn More](https://www.github.com/flatipie/flatipie) |
 | ------------------------------------- |
 
 ## Features
@@ -132,7 +132,7 @@ sidebar.setIcon(QIcon("icon.png"))
 
 For more<u> information</u> about custom **widgets** and samples, kindly proceed in this *link*
 
-| [Learn More](https://) |
+| [Learn More](https://www.github.com/flatipie/flatipie) |
 | ---------------------- |
 
 ## Help
