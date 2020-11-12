@@ -156,7 +156,7 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 
 | <img title="" src="https://avatars3.githubusercontent.com/u/74166653?s=400&u=d11dc10096cd3a3d43b9de99f14dc54d7f838cc9&v=4" alt="" width="50"> |
 |:-------------------------------------------------------------------------------------------------:|
-| [flatipie](https://www.github.com/flatipie)                                                           |
+| [flatipie](https://www.github.com/flatipie)                                                       |
 
 ## License
 
