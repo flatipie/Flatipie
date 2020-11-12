@@ -36,9 +36,8 @@
 
 **Flatipie** was originally **developed** to build <u>desktop application </u>easily using [PyQt5](https://pypi.org/project/pyqt5) that also uses it's original stylesheet for creating *modern application*.
 
-<img src="https://arminc.ga/resources/autoexec/arminc_autoexec_code.png" title="" alt="ArminC AutoExec Code" width="703">
+<img src="https://github.com/flatipie/Flatipie/blob/main/.resources/vector.jpg" title="" alt="Art" width="703">
 
-(Preview)
 
 ## Installation
 
