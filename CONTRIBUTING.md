@@ -20,5 +20,5 @@ Feel free to create a pull requests for the project. Here are some rules in cont
 
 | :book: | Use this emoji if you update either readme or any docs related |
 | --- | --- |
-| :paperclip: | **Use this emoji if you update any code.** |
+| :label: | **Use this emoji if you update any code.** |
 | :x: | **Use this emoji if you update or fix any bugs** |
