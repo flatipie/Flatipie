@@ -21,6 +21,7 @@ SOFTWARE.
 
 from PyQt5.QtWidgets import QPushButton
 from PyQt5.QtGui import QIcon, QColor
+from .errors import *
 
 class Button(QPushButton):
     def __init__(self, parent, string, color: QColor,
@@ -100,6 +101,9 @@ class Button(QPushButton):
                 background-color: {self.hover};                
             }}
             """
-        
+            
+        elif self.outline == True and self.shadow == True:
+            raise UnknownStyleError("You cannot add shadow while outline is true.")
+            
         self.setFixedSize(100, 40)
         self.setStyleSheet(style) 
