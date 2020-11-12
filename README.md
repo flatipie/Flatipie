@@ -158,6 +158,10 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 |:-------------------------------------------------------------------------------------------------:|                                                
 | [flatipie](https://www.github.com/flatipie)                                                       |
 
+## Contributors
+---
+
+
 ## License
 
 ---
