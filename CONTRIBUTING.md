@@ -1,7 +1,7 @@
 ## **CONTRIBUTING**
 
----
-> You can also put your profile in **Contributors** at [README.md](https://github.com/flatipie/flatipie/blob/main/README.md)
+> You can also put your profile in **Contributors**.
+
 
 Feel free to create a pull requests for the project. Here are some rules in contributing
 
