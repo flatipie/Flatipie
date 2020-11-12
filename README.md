@@ -47,15 +47,7 @@
 For windows and unix users, kindly execute this command in any terminal
 
 ```
-$ pip install flatipie
-```
-
----
-
-When a **new version** is out, just use *--update*
-
-```
-$ pip install flatipie --update
+soon
 ```
 
 ## Usage
