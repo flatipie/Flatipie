@@ -26,6 +26,7 @@
   <a href="#usage">Usage</a> | 
   <a href="#features">Features</a> | 
   <a href="#author">Author</a> | 
+  <a href="#contributors">Contributors</a> |
   <a href="#help">Help</a> | 
   <a href="#license">License</a>
 </p>
