@@ -1,6 +1,5 @@
 ## **CONTRIBUTING**
 
----
 > You can also put your profile in **Contributors** at [README.md](https://github.com/flatipie/flatipie/blob/main/README.md)
 
 Feel free to create a pull requests for the project. Here are some rules in contributing
@@ -20,5 +19,5 @@ Feel free to create a pull requests for the project. Here are some rules in cont
 
 | :book: | Use this emoji if you update either readme or any docs related |
 | --- | --- |
-| :paperclip: | **Use this emoji if you update any code.** |
+| :label: | **Use this emoji if you update any code.** |
 | :x: | **Use this emoji if you update or fix any bugs** |
