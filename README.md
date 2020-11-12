@@ -155,6 +155,7 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 ## Contributors
 
 ---
+![](https://github.com/zenqiwp.png?size=50)![](https://github.com/flatipie.png?size=50)
 
 ## License
 
