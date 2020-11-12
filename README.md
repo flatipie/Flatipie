@@ -6,8 +6,8 @@
 <h4 align="center">An open source framework for building desktop application..</h4>
 
 <p align="center">
-    <a href="https://github.com/flatipie/flatipie/commits/master">
-    <img src="https://img.shields.io/github/followers/zenqiwp?label=Follow&logo=github&style=flat-square"
+    <a href="https://github.com/zenqii">
+    <img src="https://img.shields.io/github/followers/zenqii?label=Follow&logo=github&style=flat-square"
          alt="GitHub">
      <a href="https://discord.gg/QDTj5sz">
     <img src="https://img.shields.io/discord/749990569266380821?color=5087F4&label=Discord&logo=discord&style=flat-square"
@@ -70,7 +70,8 @@ After you finish creating your app, you can easily build **executable** file for
 $ flatipie build
 ```
 
-[Learn More](https://www.github.com/flatipie/flatipie)
+| [Learn More](https://www.github.com/flatipie/flatipie) |
+|:------------------------------------------------------:|
 
 ## Features
 
@@ -84,9 +85,9 @@ We also added alot of **widgets**/**features** for creating modern applications.
 """
 Following args for the button:
 
-    Button(parent, string, font, color, hover)
+    Button(parent, string: str, font_color: str, color: str, hover: str, outline: bool, shadow: str)
 
-You don't need to provide stylesheet for it, just past in the arguments
+You don't need to provide stylesheet for it, just pass in the arguments
 in order to achieve your style.
 
 """
@@ -127,7 +128,8 @@ sidebar.setIcon(QIcon("icon.png"))
 
 For more<u> information</u> about custom **widgets** and samples, kindly proceed in this *link*
 
-[Learn More](https://www.github.com/flatipie/flatipie)
+| [Learn More](https://www.github.com/flatipie/flatipie) |
+|:------------------------------------------------------:|
 
 ## Help
 
@@ -148,14 +150,14 @@ Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **disco
 
 **Flatipie** was *created* and *maintained* in **9th day of November, 2020**.
 
-| ![](https://www.github.com/flatipie.png?size=50) | ![](https://github.com/zenqiwp.png?size=50) |
+| ![](https://www.github.com/flatipie.png?size=50) | ![](https://github.com/zenqii.png?size=50) |
 |:------------------------------------------------:| ------------------------------------------- |
-| [flatipie](https://www.github.com/flatipie)      | [Zenqi](https://www.github.com/zenqiwp)     |
+| [flatipie](https://www.github.com/flatipie)      | [Zenqi](https://www.github.com/zenqii)     |
 
 ## Contributors
 
 ---
-![](https://www.github.com/zenqiwp.png?size=50)
+![](https://www.github.com/zenqii.png?size=50)
 
 
 ## License

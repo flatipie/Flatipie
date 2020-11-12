@@ -1,7 +1,6 @@
 ## **CONTRIBUTING**
 
-> You can also put your profile in **Contributors**.
-
+> You can also put your profile in **Contributors** section
 
 Feel free to create a pull requests for the project. Here are some rules in contributing
 
