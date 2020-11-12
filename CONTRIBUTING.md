@@ -4,7 +4,7 @@
 
 Feel free to create a pull requests for the project. Here are some rules in contributing
 
-- Use <a href="#emoji">emoji</a> for any changes you have done.
+- Use <a href="#emojis">emoji</a> for any changes you have done.
   
 - Do not **remove** anything only add something.
   
