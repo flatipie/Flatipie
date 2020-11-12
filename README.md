@@ -6,7 +6,7 @@
 <h4 align="center">An open source framework for building desktop application..</h4>
 
 <p align="center">
-    <a href="https://github.com/flatipie/flatipie/commits/master">
+    <a href="https://github.com/zenqii">
     <img src="https://img.shields.io/github/followers/zenqii?label=Follow&logo=github&style=flat-square"
          alt="GitHub">
      <a href="https://discord.gg/QDTj5sz">
