@@ -84,7 +84,7 @@ We also added alot of **widgets**/**features** for creating modern applications.
 """
 Following args for the button:
 
-    Button(parent, string, font, color, hover)
+    Button(parent, string: str, font_color: str, color: str, hover: str, outline: bool, shadow: str)
 
 You don't need to provide stylesheet for it, just past in the arguments
 in order to achieve your style.
