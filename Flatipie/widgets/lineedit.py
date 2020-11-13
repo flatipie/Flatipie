@@ -1,6 +1,6 @@
 
 """
-                    Copyright (c) 2020 Flatipie
+					Copyright (c) 2020 Flatipie
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,69 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-class LineEdit():
-    def __init__(self, parent=None):
-        super(LineEdit, self).__init__(parent)
-        
+from PyQt5.QtWidgets import QLineEdit
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QColor
+
+
+class LineEdit(QLineEdit):
+	def __init__(self, parent, color: QColor, background=True):
+		super(LineEdit, self).__init__(parent)
+		self.color = color.name()
+		self.hover = color.darker(115).name()
+		self._color = QColor(207, 207, 207).name()
+		
+		self.isbackground = background
+		
+		if self.isbackground == True:
+			self.background = QColor(232, 232, 232).name()
+		elif self.isbackground == False:
+			self.background = "transparent"
+
+		self.create_style()
+
+	def create_style(self):
+		
+		style = f"""
+		QLineEdit {{
+			font: 8pt Arial;
+			border: none;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			border-bottom: 2px solid {self._color};
+			background-color: {self.background};
+			selection-background-color: rgba(255, 255, 255, 1);
+		}}
+		QLineEdit:hover {{
+			font: 8pt Arial;
+			border: none;
+			border-bottom: 2px solid {self.color};
+			background-color: {self.background};
+			selection-background-color: rgba(255, 255, 255, 1);
+		}}
+		"""
+		
+		self.setStyleSheet(style)
+
+	def focusInEvent(self, event):
+		super().focusInEvent(event)
+		self.setStyleSheet(f"""
+		QLineEdit {{
+			font: 8pt Arial;
+			border: none;
+			border-bottom: 2px solid {self.color};
+			background-color: {self.background};
+			selection-background-color: rgba(255, 255, 255, 1);
+		}}
+		""")
+	def focusOutEvent(self, event):
+		super().focusInEvent(event)
+		self.setStyleSheet(f"""		
+		QLineEdit {{
+			font: 8pt Arial;
+			border: none;
+			border-bottom: 2px solid {self._color};
+			background-color: {self.background};
+			selection-background-color: rgba(255, 255, 255, 1);
+		}}
+		""")
