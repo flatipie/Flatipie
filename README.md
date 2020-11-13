@@ -9,8 +9,8 @@
     <a href="https://github.com/zenqii">
     <img src="https://img.shields.io/github/followers/zenqii?label=Follow&logo=github&style=flat-square"
          alt="GitHub">
-     <a href="https://discord.gg/QDTj5sz">
-    <img src="https://img.shields.io/discord/749990569266380821?color=5087F4&label=Discord&logo=discord&style=flat-square"
+     <a href="https://discord.com/invite/SyZeeahz7E">
+    <img src="https://img.shields.io/discord/776701754619985950?label=Discord&logo=discord&style=flat-square"
          alt="Discord">
     <a href="https://twitter.com/flatipieqt">
     <img src=https://img.shields.io/twitter/follow/flatipieqt?color=%235087F4&label=Twitter&logo=twitter&style=flat-square
@@ -141,8 +141,8 @@ For more<u> information</u> about custom **widgets** and samples, kindly proceed
 
 Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **discord server** and chat with others! You can also follow me on **twitter**
 
-<a href="https://discord.gg/QDTj5sz">
-<img src="https://img.shields.io/discord/749990569266380821?color=5087F4&label=Discord&logo=discord&style=flat-square"
+<a href="https://discord.com/invite/SyZeeahz7E">
+<img src="https://img.shields.io/discord/776701754619985950?label=Discord&logo=discord&style=flat-square"
     alt="Discord">
 <a href="https://twitter.com/flatipieqt">
 <img src=https://img.shields.io/twitter/follow/flatipieqt?color=%235087F4&label=Twitter&logo=twitter&style=flat-square
