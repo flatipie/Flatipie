@@ -27,17 +27,20 @@ from .error import *
 
 class MaterialButton(QPushButton):
 
-    def __init__(self, parent, string,color: QColor):
+    def __init__(self, parent, string, color: QColor, font_color: QColor("#fff")):
         super().__init__(parent)
         self.r = 0
         self.setText(string)
+        
         self.color = color.name()
         self.hover = color.darker(110).name()
+        self.font_color = font_color.name()
+        
         self.timer = QTimer(interval=25, timeout=self.set_radius)
         self.clicked.connect(self.timer.start)
         self.setStyleSheet(f"""
         QPushButton {{
-            color: #fff;
+            color: {self.font_color};
             font: Arial;
             background-color: {self.color};
             padding: 20px;
