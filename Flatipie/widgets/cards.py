@@ -21,7 +21,31 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+from PyQt5.QtWidgets import QGroupBox, QGraphicsDropShadowEffect
+from PyQt5.QtCore import Qt, pyqtSignal, QObject, QPoint
 
-class MaterialCard():
-    def __init__(self, parent=None):
+class MaterialCard(QGroupBox):
+    clicked = pyqtSignal()
+    def __init__(self, parent=None, shadow=True):
         super(MaterialCard, self).__init__(parent)
+        self._is_shadow = shadow
+
+    @property
+    def is_shadow(self):
+        return self._is_shadow
+
+    def enterEvent(self, event):
+        if self.is_shadow:
+            shadow_effect = QGraphicsDropShadowEffect(
+                blurRadius=10, offset=QPoint(0, 0)
+            )
+            self.setGraphicsEffect(shadow_effect)
+
+    def leaveEvent(self, event):
+        if self.is_shadow:
+            self.setGraphicsEffect(None)
+
+    def mousePressEvent(self, event):
+        self.clicked.emit()
+
+        
