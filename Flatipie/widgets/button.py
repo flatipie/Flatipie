@@ -1,6 +1,5 @@
 """
                     Copyright (c) 2020 Flatipie
-                    
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -19,10 +18,65 @@ SOFTWARE.
 """
 
 
-from PyQt5.QtWidgets import QPushButton
-from PyQt5.QtGui import QIcon, QColor
-from .errors import *
+from PyQt5.QtCore import pyqtSignal
+from PyQt5.QtWidgets import QPushButton, QGraphicsDropShadowEffect
+from PyQt5.QtGui import QIcon, QColor, QPainter, QBrush, QPen
+from PyQt5.QtCore import Qt, QRect, QTimer, QPoint
+from .error import *
 
+
+class MaterialButton(QPushButton):
+
+    def __init__(self, parent, string, color: QColor, font_color: QColor("#fff")):
+        super().__init__(parent)
+        self.r = 0
+        self.setText(string)
+        
+        self.color = color.name()
+        self.hover = color.darker(110).name()
+        self.font_color = font_color.name()
+        
+        self.timer = QTimer(interval=25, timeout=self.set_radius)
+        self.clicked.connect(self.timer.start)
+        self.setStyleSheet(f"""
+        QPushButton {{
+            color: {self.font_color};
+            font: Arial;
+            background-color: {self.color};
+            padding: 20px;
+            font-size: 8pt;
+            border: none;
+        }}
+        QPushButton:hover {{
+            background-color: {self.hover};
+        }}
+        QPushButton:pressed {{
+            color: #ddd;
+        }}
+        """)
+        shadow = QGraphicsDropShadowEffect(
+        blurRadius=5, offset=QPoint(0, 0)
+        )
+        self.setGraphicsEffect(shadow)
+
+
+
+    def set_radius(self):
+        if self.r < self.width() / 2:
+            self.r += self.width() / 20
+        else:
+            self.timer.stop()
+            self.r = 0
+        self.update()
+
+    def paintEvent(self, event):
+        super().paintEvent(event)
+        if self.r:
+            qp = QPainter(self)
+            qp.setBrush(QColor(255, 255, 255, 127))
+            qp.setPen(Qt.NoPen)
+            qp.drawEllipse(self.rect().center(), self.r, self.r)
+      
 class Button(QPushButton):
     def __init__(self, parent, string, color: QColor,
         font_color=QColor("#fff"), outline=False, shadow=True):
@@ -42,10 +96,10 @@ class Button(QPushButton):
         
     def create_style(self):
       
-        if self.outline == True:
+        if self.outline == True and self.shadow == False:
             style = f"""
             QPushButton {{
-                color: {self.font_color.name()};
+                color: {self.color.name()};
                 font: Arial;
                 font-size: 8;
                 font-weight: bold;
@@ -65,6 +119,7 @@ class Button(QPushButton):
             
         
         elif self.outline == False and self.shadow  == False:
+
             style = f"""
             QPushButton {{
                 color: {self.font_color.name()};
@@ -78,7 +133,7 @@ class Button(QPushButton):
                 font: Arial;
                 font-size: 8;
                 font-weight: bold;
-                background-color: {self.color.name()};    
+                background-color: {self.hover};    
             }}
             """
         elif self.outline == False and self.shadow == True:
@@ -101,7 +156,6 @@ class Button(QPushButton):
                 background-color: {self.hover};                
             }}
             """
-            
         elif self.outline == True and self.shadow == True:
             raise UnknownStyleError("You cannot add shadow while outline is true.")
             
