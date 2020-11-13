@@ -76,8 +76,7 @@ class MaterialButton(QPushButton):
             qp.setBrush(QColor(255, 255, 255, 127))
             qp.setPen(Qt.NoPen)
             qp.drawEllipse(self.rect().center(), self.r, self.r)
-            
-
+      
 class Button(QPushButton):
     def __init__(self, parent, string, color: QColor,
         font_color=QColor("#fff"), outline=False, shadow=True):
@@ -157,7 +156,6 @@ class Button(QPushButton):
                 background-color: {self.hover};                
             }}
             """
-
         elif self.outline == True and self.shadow == True:
             raise UnknownStyleError("You cannot add shadow while outline is true.")
             

@@ -9,8 +9,8 @@
     <a href="https://github.com/zenqii">
     <img src="https://img.shields.io/github/followers/zenqii?label=Follow&logo=github&style=flat-square"
          alt="GitHub">
-     <a href="https://discord.gg/QDTj5sz">
-    <img src="https://img.shields.io/discord/749990569266380821?color=5087F4&label=Discord&logo=discord&style=flat-square"
+     <a href="https://discord.com/invite/SyZeeahz7E">
+    <img src="https://img.shields.io/discord/776701754619985950?label=Discord&logo=discord&style=flat-square"
          alt="Discord">
     <a href="https://twitter.com/flatipieqt">
     <img src=https://img.shields.io/twitter/follow/flatipieqt?color=%235087F4&label=Twitter&logo=twitter&style=flat-square
@@ -26,6 +26,7 @@
   <a href="#usage">Usage</a> | 
   <a href="#features">Features</a> | 
   <a href="#author">Author</a> | 
+  <a href="#contributors">Contributors</a> |
   <a href="#help">Help</a> | 
   <a href="#license">License</a>
 </p>
@@ -35,6 +36,9 @@
 **Flatipie** *is an **open source framework use for deploying**, **building** and **creating desktop applications**. It was created to build modern qt project easily and reliable.*
 
 **Flatipie** was originally **developed** to build <u>desktop application </u>easily using [PyQt5](https://pypi.org/project/pyqt5) that also uses it's original stylesheet for creating *modern application*.
+
+| <img src="https://github.com/flatipie/Flatipie/blob/main/.resources/vector.jpg" width="512"> |
+|:-------------------------------------------------------------------------:|
 
 ## Installation
 
@@ -85,7 +89,7 @@ We also added alot of **widgets**/**features** for creating modern applications.
 """
 Following args for the button:
 
-    Button(parent, string: str, font_color: str, color: str, hover: str, outline: bool, shadow: str)
+    Button(parent, string: str, color: QColor, font_color: QColor, outline: bool, shadow: bool)
 
 You don't need to provide stylesheet for it, just pass in the arguments
 in order to achieve your style.
@@ -137,8 +141,8 @@ For more<u> information</u> about custom **widgets** and samples, kindly proceed
 
 Having **troubles** or *issues* regarding to this <u>topic</u>? Join our **discord server** and chat with others! You can also follow me on **twitter**
 
-<a href="https://discord.gg/QDTj5sz">
-<img src="https://img.shields.io/discord/749990569266380821?color=5087F4&label=Discord&logo=discord&style=flat-square"
+<a href="https://discord.com/invite/SyZeeahz7E">
+<img src="https://img.shields.io/discord/776701754619985950?label=Discord&logo=discord&style=flat-square"
     alt="Discord">
 <a href="https://twitter.com/flatipieqt">
 <img src=https://img.shields.io/twitter/follow/flatipieqt?color=%235087F4&label=Twitter&logo=twitter&style=flat-square
