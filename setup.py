@@ -1,6 +1,6 @@
 
 """
-					Copyright (c) 2020 Flatipie
+		Copyright (c) 2020 Flatipie
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -50,11 +50,11 @@ setup(
   ],
   entry_points = {
 		"console_scripts":[
-	  	"flatipie = Flatipie.__main__:pie",
-	  	"pie = Flatipie.__main__:pie"
+		"flatipie = Flatipie.__main__:pie",
+		"pie = Flatipie.__main__:pie"
 		]
   },
-	classifiers=[
+  classifiers=[
 		"Development Status :: 1 - Planning",
 		"Intended Audience :: Developers",
 		"Intended Audience :: Education",
