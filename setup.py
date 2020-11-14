@@ -25,9 +25,9 @@ from setuptools import setup, find_packages
 import os
 
 def get_long_description():
-  with open(os.dirname(__file__) + "README.md", "r") as f:
-	readme = f.read()
-  return readme
+	with open(os.path.dirname(__file__) + "README.md", "r") as f:
+		readme = f.read()
+	return readme
 
 setup(
   name="Flatipie",
