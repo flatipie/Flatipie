@@ -166,18 +166,38 @@ class Create(object):
 #create_directory(r"C:\Users\DSPC GUEST.Admin\Desktop\Flat\test")
 
 def usage():
-    print(f"""
+    import requests
 
-Welcome to Flatify {__import__("Flatipie").__version__}
+    try:
+        req = requests.get("https://raw.githubusercontent.com/flatipie/Flatipie/main/update.json").json()
+        is_update = req["update"]
+        update_info = req["updateInfo"]
+        
+    except Exception:
+        update_info = "The system cannot check for the updates at this time"
+    
+    print(f"""
+        db8          |   
+        Y8P          | 
+                     | Welcome to Flatipie 
+88888b. 888 .d88b.   | Version {__import__("Flatipie").__version__}
+888 "88b888d8P  Y8b  | 
+888  88888888888888  | A easiest way to create modern qt applications
+888 d88P888Y8b.      | 
+88888P" 888 "Y8888   | Whats NEW? 
+888                  |    
+888                  |  {update_info}
+888                  |
+                     |
 
 Usage:
 
-create | Build your project
-run | Run your package (requires package.json)
-build | Create executable files for your project (requires package.json)
-create_resources | Compile .qrc files to py (requires package.json)
+create  - Create your project
+run     - Run your project (contains package.json)
+build   - Build your project to EXE file (contains package.json)
 
 """)
+
 
 
 def pie():
