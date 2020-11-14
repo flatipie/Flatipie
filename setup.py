@@ -25,9 +25,11 @@ from setuptools import setup, find_packages
 import os
 
 def get_long_description():
-	with open(os.path.dirname(__file__) + "README.md", "r") as f:
-		readme = f.read()
-	return readme
+        
+        with open("README.md", encoding="utf-8") as f:
+                readme = f.read()
+
+        return readme
 
 setup(
   name="Flatipie",
@@ -38,7 +40,7 @@ setup(
   url="https://github.com/flatipie/Flatipie",
   version=__import__("Flatipie").__version__,
   python_requires=">=3.5",
-  packages=find_packages(),
+  packages=find_packages(include=["Flatipie.create"]),
   platforms=["Windows"],
   license="MIT",
   keywords=["desktop application", "qt", "modern application"],
