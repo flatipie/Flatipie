@@ -43,11 +43,8 @@
 ## Installation
 
 ---
-
-For windows and unix users, kindly execute this command in any terminal
-
 ```
-soon
+$ pip install flatipie
 ```
 
 ## Usage
