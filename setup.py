@@ -49,10 +49,10 @@ setup(
 	"pyinstaller"
   ],
   entry_points = {
-		"console_scripts":[
+	"console_scripts":[
 		"flatipie = Flatipie.__main__:pie",
 		"pie = Flatipie.__main__:pie"
-		]
+	]
   },
   classifiers=[
 		"Development Status :: 1 - Planning",
