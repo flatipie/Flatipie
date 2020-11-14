@@ -1,6 +1,6 @@
 <h1 align="center">
      <br>
-     <a href="https://github.com/flatipie/flatipie">![](https://github.com/flatipie/Flatipie/blob/main/Flatipie/resources/flatipie.png)</a>
+     ![](https://github.com/flatipie/Flatipie/blob/main/Flatipie/resources/flatipie.png)
 </h1>
 
 <h4 align="center">An open source framework for building desktop application..</h4>
