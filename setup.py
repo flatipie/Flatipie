@@ -21,7 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from setuptools import setup, find_packages
+from setuptools import setup
 import os
 
 def get_long_description():
@@ -40,7 +40,7 @@ setup(
   url="https://github.com/flatipie/Flatipie",
   version=__import__("Flatipie").__version__,
   python_requires=">=3.5",
-  packages=find_packages(include=["Flatipie.create"]),
+  packages=["Flatipie", "Flatipie.widgets", "Flatipie.create"],
   platforms=["Windows"],
   license="MIT",
   keywords=["desktop application", "qt", "modern application"],
