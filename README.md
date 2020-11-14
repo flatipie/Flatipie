@@ -1,7 +1,5 @@
-<h1 align="center">
-     <br>
-     ![](https://github.com/flatipie/Flatipie/blob/main/Flatipie/resources/flatipie.png)
-</h1>
+
+![](https://github.com/flatipie/Flatipie/blob/main/Flatipie/resources/flatipie.png)
 
 <h4 align="center">An open source framework for building desktop application..</h4>
 
