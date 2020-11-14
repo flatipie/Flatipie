@@ -26,7 +26,7 @@ import os
 
 def get_long_description():
   with open(os.dirname(__file__) + "README.md", "r") as f:
-    readme = f.read()
+	readme = f.read()
   return readme
 
 setup(
@@ -45,13 +45,27 @@ setup(
   download_url="https://github.com/flatipie/Flatipie/tarball/main",
   zip_safe=False,
   install_requires = [
-    "pyqt5",
-    "pyinstaller"
+	"pyqt5",
+	"pyinstaller"
   ],
   entry_points = {
-    "console_scripts":[
-      "flatipie = Flatipie.__main__:pie",
-      "pie = Flatipie.__main__:pie"
-    ]
-  }    
+		"console_scripts":[
+	  	"flatipie = Flatipie.__main__:pie",
+	  	"pie = Flatipie.__main__:pie"
+		]
+  },
+	classifiers=[
+		"Development Status :: 1 - Planning",
+		"Intended Audience :: Developers",
+		"Intended Audience :: Education",
+		"License :: OSI Approved :: MIT License",
+		"Natural Language :: English",
+		"Operating System :: Microsoft :: Windows",
+		"Programming Language :: Python :: 3.5",
+		"Programming Language :: Python :: 3.6",
+		"Programming Language :: Python :: 3.7",
+		"Programming Language :: Python :: 3.8",
+		"Topic :: Software Development",
+		"Topic :: Software Development :: Libraries :: Python Modules",
+	]
 )
