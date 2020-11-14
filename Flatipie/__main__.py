@@ -1,6 +1,6 @@
 
 
-#from rich import print
+
 
 import os, sys
 import shutil
@@ -112,15 +112,10 @@ class Create(object):
 }
 """%(name, version, author, description, copyrightInfo)
         
-        #print(package)
-        #yesno = input("is this ok?: ")
-        #if yesno == "yes":
+ 
         
         with open(path, "w") as f:
             f.write(package)
-
-        #else:
-        #    pass
 
     def create_directory(self, dir_path):
         try:
@@ -154,7 +149,6 @@ class Create(object):
         projectDescription = input("[-] Description: ")
         projectAuthor = input("[-] Author: ")
 
-        #print("\n[-] Creating {} file @ {}".format(file, self.path))
         projectpath = f"{self.path}\\{projectName}"
         package_path = f"{projectpath}\\package.json"
         self.copy_files(projectpath)
@@ -162,8 +156,7 @@ class Create(object):
             
             
 
-#copy(r"C:\Users\DSPC GUEST.Admin\Desktop\Flat\test")
-#create_directory(r"C:\Users\DSPC GUEST.Admin\Desktop\Flat\test")
+
 
 def usage():
     import requests
