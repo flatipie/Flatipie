@@ -83,36 +83,6 @@ class Build(object):
         else:
             subprocess.run("pyinstaller -w -i {} --name {} --add-data {} --distpath {} {}".format(icon, name, file_to_add, exe_path, script))
 
-
-        subprocess.run("cls")
-        yesorno = (f"\nThe EXE file is saved in {exe_path}. Would you like to create resource version for it? (Y/N): ")
-
-        if yesorno == "Y" or yesorno == "YES" or yesorno == "yes":
-            self.create_resources(exe_path, name, author, version, description, copyrightInfo)
-
-        elif yesorno == "N" or yesourno == "NO" or yesorno == "no":
-            print("Okay, closing the build function. Thank you for using FLatipie.")
-        
-
-    def create_resources(self, exe, name, author, version, description, copyrightInfo):
-        #verpatch.exe script.exe 1.0.0.0 /va /pv 1.0.0.0 /s description "Your product description" /s product "Your product name" /s copyright "Your company name, 2016" /s company "Your company name"
-        verpatch_path = os.dirname(os.abspath(__file__)) + "\\bin\\verpatch.exe"
-
-        exe_file = exe
-
-        if os.path.isdir(exe):
-            for filename in os.listdir(exe):
-                if filename.endswith(".exe"):
-                    exe_file = exe + f"\{filename}"
-
-
-        if copyrightInfo is None:
-            now = datetime.datetime.now()
-            copyrightInfo = f"Copyright (c) {projectAuthor}, {now.year}. All rights reserved"
-
-        command = f"{verpatch_path} {exe_file} {version} /va /pv {version} /s description {description} /s product {name} /s copyright {copyrightInfo} /s company {author}"
-        subprocess.run(command)
-
 class Create(object):
     def __init__(self, path):
         self.path = path
