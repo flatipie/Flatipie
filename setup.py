@@ -51,7 +51,7 @@ setup(
 		"Flatipie/create/src/resources/*", "Flatipie/create/*",
 		"Flatipie/create/src/*"
 	]
-  }
+  },
   include_package_data=True,
   install_requires = [
 	"pyqt5",
