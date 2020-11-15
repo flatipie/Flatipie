@@ -37,7 +37,7 @@ class Run(object):
 
         data = json.load(w)
         script = data["main"]
-        print("Thank you for using Flatpie - {} https://github.com/zenqiwp".format(__import__("Flatipie").__version__))
+        print("Thank you for using Flatpie - {} https://github.com/flatipie/flatipie".format(__import__("Flatipie").__version__))
         subprocess.run(f"python {script}")
         
 
@@ -151,6 +151,10 @@ class Create(object):
 
         projectpath = f"{self.path}\\{projectName}"
         package_path = f"{projectpath}\\package.json"
+           
+        if projectVersion == "":
+            projectVersion = "1.0"
+        
         self.copy_files(projectpath)
         self.create_package_json(package_path, projectName, projectVersion, projectAuthor, projectDescription)
             
