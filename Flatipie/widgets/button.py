@@ -78,7 +78,7 @@ class MaterialButton(QPushButton):
             qp.drawEllipse(self.rect().center(), self.r, self.r)
       
 class Button(QPushButton):
-    def __init__(self, parent, string, color: QColor,
+    def __init__(self, parent=None, string="", color: QColor(77, 153, 239),
         font_color=QColor("#fff"), outline=False, shadow=True):
         super(Button, self).__init__(parent)
 
