@@ -46,6 +46,13 @@ setup(
   keywords=["desktop application", "qt", "modern application"],
   download_url="https://github.com/flatipie/Flatipie/tarball/main",
   zip_safe=False,
+  package_data={
+  	"Flatipie": [
+		"Flatipie/create/src/resources/*", "Flatipie/create/*",
+		"Flatipie/create/src/*"
+	]
+  }
+  include_package_data=True,
   install_requires = [
 	"pyqt5",
 	"pyinstaller"
