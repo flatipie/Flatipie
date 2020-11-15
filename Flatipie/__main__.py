@@ -168,7 +168,11 @@ def usage():
     try:
         req = requests.get("https://raw.githubusercontent.com/flatipie/Flatipie/main/update.json").json()
         is_update = req["update"]
+        ver = req["version"]
         update_info = req["updateInfo"]
+        
+        if ver == __import__("Flatipie").__version__:
+            update_info = "Your Flatipie version is up to date"
         
     except Exception:
         update_info = "The system cannot check for the updates at this time"
