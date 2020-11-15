@@ -57,6 +57,8 @@ class LineEdit(QLineEdit):
 		QLineEdit:hover {{
 			font: 8pt Arial;
 			border: none;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
 			border-bottom: 2px solid {self.color};
 			background-color: {self.background};
 			selection-background-color: rgba(255, 255, 255, 1);
@@ -71,6 +73,8 @@ class LineEdit(QLineEdit):
 		QLineEdit {{
 			font: 8pt Arial;
 			border: none;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
 			border-bottom: 2px solid {self.color};
 			background-color: {self.background};
 			selection-background-color: rgba(255, 255, 255, 1);
@@ -82,6 +86,8 @@ class LineEdit(QLineEdit):
 		QLineEdit {{
 			font: 8pt Arial;
 			border: none;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
 			border-bottom: 2px solid {self._color};
 			background-color: {self.background};
 			selection-background-color: rgba(255, 255, 255, 1);
