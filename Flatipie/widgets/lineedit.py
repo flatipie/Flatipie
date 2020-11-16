@@ -27,7 +27,7 @@ from PyQt5.QtGui import QColor
 
 
 class LineEdit(QLineEdit):
-	def __init__(self, parent=None, color: QColor(77, 153, 239), background=True):
+	def __init__(self, parent=None, color=QColor(77, 153, 239), background=True):
 		super(LineEdit, self).__init__(parent)
 		self.color = color.name()
 		self.hover = color.darker(115).name()
