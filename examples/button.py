@@ -1,6 +1,6 @@
 """
-					  Copyright (c) 2020 Flatipie
-				This project was created by Flatipie.
+		Copyright (c) 2020 Flatipie
+	This project was created by Flatipie.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@ SOFTWARE.
 """
 
 from PyQt5.QtWidgets import ( QApplication, QWidget, QGridLayout, QDesktopWidget )
-from Flatipie.widgets import MaterialButton, Button
+from Flatipie.widgets import Button
 from Flatipie import apply_palette, ModernWindow
 import random
 
@@ -38,7 +38,7 @@ class MainWindow(QWidget):
     
     for x in range(5):
       for y in range(5):
-        # You can use Material Button aswell also you can change the style to Flat and more in Button.
+        # You can use different style aswell like Flat and more in Button.
         # Read more infos at https://github.com/flatipie/flatipie
         
         grid.addWidget(Button("Push me"), x, y)
