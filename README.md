@@ -1,6 +1,6 @@
 <h1 align="center">
      <br>
-     <a href="https://github.com/flatipie/flatipie"><img src="https://github.com/flatipie/Flatipie/blob/main/Flatipie/resources/flatipie.png" alt="Flatipie"></a>
+     <img src="https://github.com/flatipie/Flatipie/blob/main/.resources/flatipie.png" alt="Flatipie">
 </h1>
 
 <h4 align="center">An open source framework for building desktop application..</h4>
@@ -43,11 +43,8 @@
 ## Installation
 
 ---
-
-For windows and unix users, kindly execute this command in any terminal
-
 ```
-soon
+$ pip install flatipie
 ```
 
 ## Usage
@@ -97,6 +94,23 @@ in order to achieve your style.
 """
 button = Button(self, "Get Started")
 button.clicked.connect(lambda: print("Navigation"))
+
+# Material Style
+
+button = MaterialButton(self, QColor(77, 153, 239))
+button.clicked.connect(lambda: print("Material Button"))
+
+```
+**LineEdit**
+
+```python
+"""
+LineEdits have 2 style, the first one is with background and second has no background
+It's arguments is same as QLineEdit:
+     LineEdit(parent, color: QColor, background: bool)
+"""
+line = LineEdit(self, color=QColor(77, 153, 239), background=True)
+
 ```
 
 **Clickable cards**
@@ -108,7 +122,7 @@ and more effect.
 
 To connect clicked signals you may use this
 """
-
+cards = MaterialCard(self, shadow=True)
 cards.clicked.connect(lambda: print("Navigation"))
 ```
 
@@ -116,16 +130,12 @@ cards.clicked.connect(lambda: print("Navigation"))
 
 ```python
 """
-The following arguments/functions are:
-
-    Sidebar(parent)
-    Sidebar.addPage(QWidget)
+The sidebar is based on QTabWidget.
 """
 
 
 sidebar = Sidebar(self)
-sidebar.addPage(QWidget())
-sidebar.setIcon(QIcon("icon.png"))
+sidebar.addTab(QWidget(), QIcon("icon.png"))
 ```
 
 ---

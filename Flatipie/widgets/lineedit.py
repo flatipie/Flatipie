@@ -27,7 +27,7 @@ from PyQt5.QtGui import QColor
 
 
 class LineEdit(QLineEdit):
-	def __init__(self, parent, color: QColor, background=True):
+	def __init__(self, parent=None, color=QColor(77, 153, 239), background=True):
 		super(LineEdit, self).__init__(parent)
 		self.color = color.name()
 		self.hover = color.darker(115).name()
@@ -57,6 +57,8 @@ class LineEdit(QLineEdit):
 		QLineEdit:hover {{
 			font: 8pt Arial;
 			border: none;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
 			border-bottom: 2px solid {self.color};
 			background-color: {self.background};
 			selection-background-color: rgba(255, 255, 255, 1);
@@ -71,6 +73,8 @@ class LineEdit(QLineEdit):
 		QLineEdit {{
 			font: 8pt Arial;
 			border: none;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
 			border-bottom: 2px solid {self.color};
 			background-color: {self.background};
 			selection-background-color: rgba(255, 255, 255, 1);
@@ -82,6 +86,8 @@ class LineEdit(QLineEdit):
 		QLineEdit {{
 			font: 8pt Arial;
 			border: none;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
 			border-bottom: 2px solid {self._color};
 			background-color: {self.background};
 			selection-background-color: rgba(255, 255, 255, 1);

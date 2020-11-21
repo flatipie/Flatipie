@@ -1,6 +1,6 @@
 
 
-#from rich import print
+
 
 import os, sys
 import shutil
@@ -37,7 +37,7 @@ class Run(object):
 
         data = json.load(w)
         script = data["main"]
-        print("Thank you for using Flatpie - {} https://github.com/zenqiwp".format(__import__("Flatipie").__version__))
+        print("Thank you for using Flatpie - {} https://github.com/flatipie/flatipie".format(__import__("Flatipie").__version__))
         subprocess.run(f"python {script}")
         
 
@@ -83,36 +83,6 @@ class Build(object):
         else:
             subprocess.run("pyinstaller -w -i {} --name {} --add-data {} --distpath {} {}".format(icon, name, file_to_add, exe_path, script))
 
-
-        subprocess.run("cls")
-        yesorno = (f"\nThe EXE file is saved in {exe_path}. Would you like to create resource version for it? (Y/N): ")
-
-        if yesorno == "Y" or yesorno == "YES" or yesorno == "yes":
-            self.create_resources(exe_path, name, author, version, description, copyrightInfo)
-
-        elif yesorno == "N" or yesourno == "NO" or yesorno == "no":
-            print("Okay, closing the build function. Thank you for using FLatipie.")
-        
-
-    def create_resources(self, exe, name, author, version, description, copyrightInfo):
-        #verpatch.exe script.exe 1.0.0.0 /va /pv 1.0.0.0 /s description "Your product description" /s product "Your product name" /s copyright "Your company name, 2016" /s company "Your company name"
-        verpatch_path = os.dirname(os.abspath(__file__)) + "\\bin\\verpatch.exe"
-
-        exe_file = exe
-
-        if os.path.isdir(exe):
-            for filename in os.listdir(exe):
-                if filename.endswith(".exe"):
-                    exe_file = exe + f"\{filename}"
-
-
-        if copyrightInfo is None:
-            now = datetime.datetime.now()
-            copyrightInfo = f"Copyright (c) {projectAuthor}, {now.year}. All rights reserved"
-
-        command = f"{verpatch_path} {exe_file} {version} /va /pv {version} /s description {description} /s product {name} /s copyright {copyrightInfo} /s company {author}"
-        subprocess.run(command)
-
 class Create(object):
     def __init__(self, path):
         self.path = path
@@ -142,15 +112,10 @@ class Create(object):
 }
 """%(name, version, author, description, copyrightInfo)
         
-        #print(package)
-        #yesno = input("is this ok?: ")
-        #if yesno == "yes":
+ 
         
         with open(path, "w") as f:
             f.write(package)
-
-        #else:
-        #    pass
 
     def create_directory(self, dir_path):
         try:
@@ -184,30 +149,56 @@ class Create(object):
         projectDescription = input("[-] Description: ")
         projectAuthor = input("[-] Author: ")
 
-        #print("\n[-] Creating {} file @ {}".format(file, self.path))
         projectpath = f"{self.path}\\{projectName}"
         package_path = f"{projectpath}\\package.json"
+           
+        if projectVersion == "":
+            projectVersion = "1.0"
+        
         self.copy_files(projectpath)
         self.create_package_json(package_path, projectName, projectVersion, projectAuthor, projectDescription)
             
             
 
-#copy(r"C:\Users\DSPC GUEST.Admin\Desktop\Flat\test")
-#create_directory(r"C:\Users\DSPC GUEST.Admin\Desktop\Flat\test")
+
 
 def usage():
-    print(f"""
+    import requests
 
-Welcome to Flatify {__import__("Flatipie").__version__}
+    try:
+        req = requests.get("https://raw.githubusercontent.com/flatipie/Flatipie/main/update.json").json()
+        is_update = req["update"]
+        ver = req["version"]
+        update_info = req["updateInfo"]
+        
+        if ver == __import__("Flatipie").__version__:
+            update_info = "Your Flatipie version is up to date"
+        
+    except Exception:
+        update_info = "The system cannot check for the updates at this time"
+    
+    print(f"""
+        db8          |   
+        Y8P          | 
+                     | Welcome to Flatipie 
+88888b. 888 .d88b.   | Version {__import__("Flatipie").__version__}
+888 "88b888d8P  Y8b  | 
+888  88888888888888  | A easiest way to create modern qt applications
+888 d88P888Y8b.      | 
+88888P" 888 "Y8888   | Whats NEW? 
+888                  |    
+888                  |  {update_info}
+888                  |
+                     |
 
 Usage:
 
-create | Build your project
-run | Run your package (requires package.json)
-build | Create executable files for your project (requires package.json)
-create_resources | Compile .qrc files to py (requires package.json)
+create  - Create your project
+run     - Run your project (contains package.json)
+build   - Build your project to EXE file (contains package.json)
 
 """)
+
 
 
 def pie():

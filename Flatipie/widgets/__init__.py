@@ -21,7 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from .button import Button
+from .button import Button, MaterialButton
 from .cards import MaterialCard
 from .lineedit import LineEdit
 from .sidebar import Sidebar

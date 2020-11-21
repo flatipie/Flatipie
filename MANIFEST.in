@@ -1,0 +1,6 @@
+include Flatipie/create/main.py
+include Flatipie/create/src/__init__.py
+include Flatipie/create/src/resources/rc.qrc
+include Flatipie/create/src/resources/icons/icon.ico
+include Flatipie/README.md
+include Flatipie/create/src/app.py

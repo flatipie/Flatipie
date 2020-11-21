@@ -192,7 +192,7 @@ class ModernWindow(QWidget):
 
 		self.hboxTitle = QHBoxLayout(self.titleBar)
 		self.hboxTitle.setContentsMargins(0, 0, 0, 0)
-		self.hboxTitle.setSpacing(0)
+		self.hboxTitle.setSpacing(15)
 
 		self.lblTitle = QLabel('Title')
 		self.lblTitle.setObjectName('lblTitle')
