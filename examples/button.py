@@ -24,7 +24,7 @@ SOFTWARE.
 from PyQt5.QtWidgets import ( QApplication, QWidget, QGridLayout, QDesktopWidget )
 from Flatipie.widgets import Button
 from Flatipie import apply_palette, ModernWindow
-import random
+import sys
 
 class MainWindow(QWidget):
   def __init__(self):
