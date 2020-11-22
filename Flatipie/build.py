@@ -1,5 +1,5 @@
 """
-					Copyright (c) 2020 Flatipie
+		Copyright (c) 2020 Flatipie
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,11 +30,9 @@ from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QToolButton,
 							QLabel, QSizePolicy, QDesktopWidget)
 import sys
 import PyQt5
-import qtpy
 from . import resources
 
-#QT_VERSION = tuple(int(v) for v in qtpy.QT_VERSION.split('.'))
-#print(QT_VERSION)
+
 QT_VERSION = (5, 15, 1)
 
 
