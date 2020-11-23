@@ -1,14 +1,11 @@
 # Development
 
----
-
 | Status | Release Note | Upcoming updates |
 | --- | --- | --- |
 | :heavy_check_mark: **Beta** | :o: **Version 0.4.2.1** is out now (fix bugs) | :o: **Adding custom widgets** |
 
 ## Features
 
----
 
 - [x] Button
   
@@ -29,7 +26,6 @@
 
 ## Updates
 
----
 
 | Widgets | Note | Status |
 | --- | --- | --- |
@@ -39,6 +35,5 @@
 
 ## Note
 
----
 
 If you want to contribute anything that regards in this topic, feel free to do a pull requests. Just read rules in [contributing](https://github.com/flatipie/Flatipie/blob/main/CONTRIBUTING.md).
