@@ -32,6 +32,7 @@
 </p>
 
 ## About
+> Flatipie is now an unmaintained project. I'll continue developing this if I have encouraged to do so.
 
 **Flatipie** *is an **open source framework use for deploying**, **building** and **creating desktop applications**. It was created to build modern qt project easily and reliable.*
 
